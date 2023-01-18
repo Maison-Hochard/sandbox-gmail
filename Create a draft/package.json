@@ -5,14 +5,17 @@
   "main": "script.js",
   "scripts": {
     "start": "node script.js",
-    "start-arg": "node script.js -d test"
+    "start-arg": "node script.js -t \"receiver@gmail.com\" -s \"Subject Text\" -b \"The message text goes here\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/local-auth": "^2.1.1",
     "axios": "^1.2.2",
     "commander": "^7.2.0",
     "console-stamp": "^3.0.3",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "googleapis": "^110.0.0",
+    "mimemessage": "^1.0.5"
   }
 }
